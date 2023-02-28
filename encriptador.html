@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es"></html>
 
-     <head>
-          <meta charset="UTF-8">
-          <title>
-               Encriptador de texto 
-          </title>
-          <link rel="stylesheet" href="reset.css">
-          <link rel="stylesheet" href="style.css">
-     </head>
 
-     <body>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap"rel="stylesheet">
+             
+   </head>
 
-          <header class="header">
-              <a href="encriptador.html"> <img src="candado.png" alt="logo" /><a href="encriptador.html"> </a>
-              <h1>ENCRIPTADOR</h1>
-          </header>
-          <main>
-          <fieldset>
-          <ul> 
-               <h2 class="pregunta">
-                    ¿Como usar el encriptador?
-               </h2>
-               <li>1.Escribe el texto que quieres encriptar</li>
-               <li>2.Haz click en el botón de encriptar</li>
-               <li>3.Si quieres desencriptar el texto da click en el botón descencriptar</li>
+   <div class="container">
+     <nav><img src="candado.png"alt="Logo de encriptador">Encriptador</nav>
+     <main>
+        <form>
+          <ul class="instrucciones">
+            <li>1.Inserta tu mensaje</li>
+            <li>2.Haz click en el botón encriptar</li>
+            <li>3.Haz click en el botón desencriptar si quieres descifrar tu texto</li>
           </ul>
+          <br>
+          <textarea placeholder="Ingrese el texto aquí" id="mensaje" class="encriptado" required></textarea>
+          
+        </form>
+     </main>
+     <div id="sidebar">
 
-          <form>
-               <label for="Introducetutexto">Introduce tu texto</label>
-               <br>
-               <textarea placeholder="Introduzca su texto" cols="70" rows="10"required >  </textarea>
-               <input type="button" value="Encriptar" class="botonencriptar"> 
-          </form>
-          </fieldset>
-          </main>
-          <footer>
-               <p>Este sitio fue desarrollado por Mijail Campos</p>
+      <textarea placeholder="Ingrese el texto aquí" id="copiar" class="encriptado" required></textarea>
+     </div>
+     <div id="content1">
+      <input type="submit" value="Encriptar" class="enviar">
+      <input type="submit" value="Desencriptar" class="enviar2">
 
-          </footer>
-     </body>
 
-</html>
+
+     </div>
+     <footer>Encriptador desarrollado por Mijail Campos</footer>   
+    </div>
